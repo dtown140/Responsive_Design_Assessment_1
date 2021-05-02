@@ -1,0 +1,76 @@
+body{
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Karla', sans-serif;
+    font-size: auto;
+    margin: 100 auto;
+    padding: 20px;
+    color:whitesmoke;
+    background-image: url(/bg-desktop.svg);
+}
+
+#logo{
+    padding: 20px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px auto;
+}
+
+.register{
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: gray;
+
+}
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: whitesmoke;
+}
+
+.links button{
+    border-radius: 50px;
+}
+.links{
+    display: flex;
+    margin-left: 75%;
+}
+
+@media (orientation: landscape) and (min-width: 601px){
+   
+    .illustration img{
+        margin-right: 30px;
+    }
+    .description{
+        margin-right: 50px;
+    }
+}
+
+@media (orientation: portrait){
+    .illustration img{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+}
+@media (orientation: portrait) and (max-width: 600px){
+    body{
+        background-image: url(/bg-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        
+    } 
+
+    .description{
+        margin-top: 50px;
+       grid-area: 2 / 1 / 4 / 3; 
+    }
+}
+
+
+
+
+
